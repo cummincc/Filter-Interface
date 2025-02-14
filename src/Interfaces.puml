@@ -19,11 +19,11 @@ class BigRectLister {
     + static void main(String[] args)
 }
 
-' Implementations
-ShortWordFilter -|> Filter
-BigRectangleFilter -|> Filter
+' Implementations (Dotted Line for Interface Implementation)
+ShortWordFilter .|> Filter
+BigRectangleFilter .|> Filter
 
-' Dependencies
+' Dependencies (Solid Line with Arrow for Usage)
 ShortLister --> ShortWordFilter : "Uses"
 BigRectLister --> BigRectangleFilter : "Uses"
 
